@@ -181,14 +181,7 @@ public class Laboratorio28enero {
              lista.remove(indice);
                    
     }
-     public static void alimentar(){
-        System.out.println("Ingrese la posicion del animal al que alimentara");
-        int pos=leer.nextInt();
-        System.out.println("Ingrese la posicion del animal al que se devoraran");
-        int pos2=leer.nextInt();
-        lista.get(pos).setVida((pos)+(pos2));
-        lista.remove(pos2);
-        
+     
     
     }
      
