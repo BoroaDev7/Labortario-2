@@ -175,9 +175,15 @@ public class Laboratorio28enero {
      
      
     public static void eliminar(){
-        
+        System.out.println("Ingrese el nombre cienfitico del animal");
+         String imp=leer.nextLine();
+             int indice=lista.indexOf(imp);
+             lista.remove(indice);
+                   
     }
      
+    
+    }
      
    
      
