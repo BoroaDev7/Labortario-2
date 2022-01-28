@@ -7,6 +7,7 @@ import java.util.Scanner;
 /**
  *
  * @author Juan Manuel Borjas Figueroa
+ *  Perdon por hacerte revisar esto tan lamentable, la verdad esta bien malo pero no se me ocurria como realizar las soluciones bien xD
  */
 public class Laboratorio28enero {
   public static ArrayList<Animales> lista=new ArrayList();
@@ -124,7 +125,8 @@ public class Laboratorio28enero {
          System.out.println("Ingrese el nombre cienfitico del animal");
          String imp=leer.nextLine();
          imp=leer.nextLine();
-             int indice=lista.indexOf(imp);
+             int indice;
+             indice=lista.indexOf(imp);
              System.out.println(    "1.Editar un Atributo\n"+
                                     "2.Editar todo\n");
              System.out.println("Ingrese la opcion que desea editar" );
@@ -136,8 +138,7 @@ public class Laboratorio28enero {
      }
       
      
-     public static void editaruno(int indice
-     ){
+     public static void editaruno(int indice){
         System.out.println("1. Nombre Cientifico\n");
         System.out.println("2. Nombre Comun\n");
         System.out.println("3. Habitat\n");
@@ -149,7 +150,9 @@ public class Laboratorio28enero {
         int opcion = leer.nextInt();
         if(opcion == 1){
             System.out.print("Nombre Cientifico: ");
+            if(indice!=-1)
             lista.get(indice).setNombrecien(leer.nextLine());
+            
         }else if(opcion == 2){
             System.out.print("Nombre: ");
             lista.get(indice).setNombre(leer.nextLine());
@@ -208,7 +211,7 @@ public class Laboratorio28enero {
         
     
     }
-     
+    
    
      
 }
