@@ -20,7 +20,9 @@ public class Laboratorio28enero {
         animal2 = new Animales("Canis", "Perro", "casa", "croquetas", "negro", "Honduras", 3 );
         animal3 = new Animales("Psittacoidea", "Loro", "casa", "frutas", "verde", "Rusia", 1 );
         
-        
+        lista.add(animal1);
+        lista.add(animal2);
+        lista.add(animal3);
      do{
             opciones( menu() );
         }while(true);
@@ -84,11 +86,12 @@ public class Laboratorio28enero {
  
      public static void listar(){
         
-         System.out.println("Ingrese la opcion que quiere imprimir");
-         int opcion=leer.nextInt();
+         
          System.out.println("1.Imrprimir por posicion de la lista"+
                               "2.Imprimir lista completa" +
                                 "3.Imprimir por nombre cientifico");
+         System.out.println("Ingrese la opcion que quiere imprimir");
+         int opcion=leer.nextInt();
          
           if(opcion == 1){
               System.out.println("Ingrese la posicion");
