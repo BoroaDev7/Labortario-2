@@ -87,9 +87,9 @@ public class Laboratorio28enero {
      public static void listar(){
         
          
-         System.out.println("1.Imrprimir por posicion de la lista"+
-                              "2.Imprimir lista completa" +
-                                "3.Imprimir por nombre cientifico");
+         System.out.println("1.Imrprimir por posicion de la lista\n"+
+                              "2.Imprimir lista completa\n" +
+                                "3.Imprimir por nombre cientifico\n");
          System.out.println("Ingrese la opcion que quiere imprimir");
          int opcion=leer.nextInt();
          
@@ -123,11 +123,12 @@ public class Laboratorio28enero {
      public static void editar(){
          System.out.println("Ingrese el nombre cienfitico del animal");
          String imp=leer.nextLine();
+         imp=leer.nextLine();
              int indice=lista.indexOf(imp);
+             System.out.println(    "1.Editar un Atributo\n"+
+                                    "2.Editar todo\n");
              System.out.println("Ingrese la opcion que desea editar" );
              int opcion=leer.nextInt();
-             System.out.println(    "1.Editar un Atributo"+
-                                    "2.Editar todo");
              if(opcion==1)
                  editaruno(indice);
              else if(opcion==2)
@@ -136,13 +137,13 @@ public class Laboratorio28enero {
       
      
      public static void editaruno(int indice){
-        System.out.println("1. Nombre Cientifico");
-        System.out.println("2. Nombre Comun");
-        System.out.println("3. Habitat");
+        System.out.println("1. Nombre Cientifico\n");
+        System.out.println("2. Nombre Comun\n");
+        System.out.println("3. Habitat\n");
         System.out.println("4. Alimentacion");
-        System.out.println("5. Descripcion de Rasgos");
-        System.out.println("6. Distribucion Geografica");
-        System.out.println("7. Vida");
+        System.out.println("5. Descripcion de Rasgos\n");
+        System.out.println("6. Distribucion Geografica\n");
+        System.out.println("7. Vida\n");
         System.out.print("Ingrese la opcion: ");
         int opcion = leer.nextInt();
         if(opcion == 1){
