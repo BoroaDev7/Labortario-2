@@ -11,11 +11,20 @@ import java.util.Scanner;
 public class Laboratorio28enero {
   public static ArrayList<Animales> lista=new ArrayList();
   public static Scanner leer= new Scanner(System.in);
+  public static Animales animal1=new Animales();
+  public static Animales animal2=new Animales();
+  public static Animales animal3=new Animales();
 
     public static void main(String[] args) {
-     
-        opciones ( menu());
-     
+        animal1 = new Animales("Felis catus", "Gato", "casa", "croquetas", "amarillo", "japon", 2 );
+        animal2 = new Animales("Canis", "Perro", "casa", "croquetas", "negro", "Honduras", 3 );
+        animal3 = new Animales("Psittacoidea", "Loro", "casa", "frutas", "verde", "Rusia", 1 );
+        
+        
+     do{
+            opciones( menu() );
+        }while(true);
+        
      
      
     }
