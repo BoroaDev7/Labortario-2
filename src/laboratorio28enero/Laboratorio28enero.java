@@ -49,30 +49,7 @@ public class Laboratorio28enero {
          
          }
      
-     public static void registrar(){
-         System.out.print("Nombre Cientifico: ");
-        String nombrecien = leer.nextLine();
-        nombrecien = leer.nextLine();
-        System.out.print("Nombre Comun: ");
-        String nombre = leer.nextLine();
-        System.out.print("Habitat: ");
-        String habitat = leer.nextLine();
-        System.out.print("Alimentacion: ");
-        String alimentacion = leer.nextLine();
-        System.out.print("Descripcion de rasgos: ");
-        String desrasgos = leer.nextLine();
-        System.out.print("Distribucion Geografica: ");
-        String disgeo = leer.nextLine();
-        System.out.print("Vida: ");
-        int vida=leer.nextInt();
-        while(vida==0){
-            System.out.println("La vida no puede ser 0\n");
-            System.out.print("Vida: ");
-            vida=leer.nextInt();   
-        }
-        lista.add(new Animales(nombrecien, nombre, habitat, alimentacion, desrasgos, disgeo, vida));
-     }
- 
+    
      public static void listar(){
         
          System.out.println("Ingrese la opcion que quiere imprimir");
