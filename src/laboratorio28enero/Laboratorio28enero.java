@@ -39,7 +39,7 @@ public class Laboratorio28enero {
         System.out.println("1. Registrar animales\n" +
                             "2. Listar animales\n" +
                             "3. Editar animales\n" +
-                            "4. Eliminar alumno\n" +
+                            "4. Eliminar animales\n" +
                             "5. Alimentar animales\n" +
                             "Ingrese la opcion: ");
         return leer.nextInt();
@@ -136,7 +136,8 @@ public class Laboratorio28enero {
      }
       
      
-     public static void editaruno(int indice){
+     public static void editaruno(int indice
+     ){
         System.out.println("1. Nombre Cientifico\n");
         System.out.println("2. Nombre Comun\n");
         System.out.println("3. Habitat\n");
@@ -188,18 +189,21 @@ public class Laboratorio28enero {
      
      
     public static void eliminar(){
-        System.out.println("Ingrese el nombre cienfitico del animal");
-         String imp=leer.nextLine();
-             int indice=lista.indexOf(imp);
+        int indice;
+        System.out.println("Ingrese el nombre cienfitico del animal"); 
+        String imp=leer.nextLine();
+         imp=leer.nextLine();
+             indice=lista.indexOf(imp);
              lista.remove(indice);
-                   
+                  
     }
+    
      public static void alimentar(){
         System.out.println("Ingrese la posicion del animal al que alimentara");
         int pos=leer.nextInt();
         System.out.println("Ingrese la posicion del animal al que se devoraran");
         int pos2=leer.nextInt();
-        lista.get(pos).setVida((pos)+(pos2));
+        //lista.get(pos).setVida((pos)+(pos2));
         lista.remove(pos2);
         
     
